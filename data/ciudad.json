@@ -1,0 +1,52 @@
+{
+  "_nota": "Ejemplo de ajustes de ciudad (Vigo). Los algoritmos de js/ y tools/ leen de aquí lo propio de cada ciudad; para otra ciudad basta con cambiar este archivo.",
+  "zona_horaria": "Europe/Madrid",
+  "latitud": 42.2,
+  "festivos": {
+    "_nota": "Con horario de domingo. fijos: MM-DD (nacionales, de Galicia y de Vigo). pascua: días respecto al Domingo de Resurrección (-3 Jueves Santo, -2 Viernes Santo).",
+    "fijos": [
+      "01-01",
+      "01-06",
+      "03-28",
+      "05-01",
+      "05-17",
+      "07-25",
+      "08-15",
+      "10-12",
+      "11-01",
+      "12-06",
+      "12-08",
+      "12-25"
+    ],
+    "pascua": [
+      -3,
+      -2
+    ]
+  },
+  "parada_inactiva": "\\bno activa\\b",
+  "lineas": {
+    "_nota": "extra: líneas que no están en la lista oficial de paradas y se añaden donde tienen viajes. renombrar: [patrón, cambio] sobre el nombre corto de la línea en el GTFS.",
+    "extra": [
+      "LZD"
+    ],
+    "renombrar": [
+      [
+        "^PSA(\\d)",
+        "PSA \\1"
+      ]
+    ]
+  },
+  "api_tiempos": "https://datos.vigo.org/vci_api_app/api2.jsp?id={}&ttl=5&tipo=TRANSPORTE-ESTIMACION-PARADA",
+  "relieve_zona": [
+    -8.845,
+    42.105,
+    -8.585,
+    42.3
+  ],
+  "relieve_prueba": [
+    -8.72,
+    42.23,
+    -8.71,
+    42.24
+  ]
+}
